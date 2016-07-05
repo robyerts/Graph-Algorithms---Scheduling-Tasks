@@ -2,8 +2,8 @@
 - written in java;
 - to be finished;
 
-Source files are located in package  "company" \n
-IDE: Intellij IDEA
+Source files are located in package  "company" ;
+- IDE: Intellij IDEA
 
 Current state:
 - 9-th and 10-th functions are not completely implememented
