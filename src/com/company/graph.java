@@ -36,7 +36,7 @@ public class graph {
            minStartTime. put(i,0);  // OR 8*60 if
             computeDuration(i);
         }
-        computeMAXDuration();
+        //computeMAXDuration();
     }
 
 
@@ -92,7 +92,7 @@ public class graph {
             minStartTime. put(i,0);
             computeDuration(i);
         }
-        computeMAXDuration();
+        //computeMAXDuration();
 
 
 
