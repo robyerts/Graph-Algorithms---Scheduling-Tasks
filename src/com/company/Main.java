@@ -19,7 +19,7 @@ public class Main {
             System.out.println("5.duration of the task");
             System.out.println("6.toposort(returns an empty list if there are cycles)");
             System.out.println("7.print the tasks and their outbound and inbound dependencies");
-            System.out.println("8.the minimum time at which the task can start");
+            System.out.println("8.the minimum time at which each task can start");
             System.out.println("9.the maximum time at which the task can start");
             System.out.println("10.get the lists of critical tasks");
             Scanner in = new Scanner(System.in);
@@ -28,9 +28,6 @@ public class Main {
             if (comm==0)
                 break;
             switch (comm) {
-                case 1:
-                    g.addVertex();
-                    break;
                 case 2:
                     g.addEdge();
                     break;
@@ -67,11 +64,11 @@ public class Main {
                      break;
                  }
                 case 8: {
-                    g.getMinStartTimeUser();
+                    System.out.println(g.getMinStartTime());
                     break;
                 }
                 case 9: {
-                    g.getMaxStartTimeUser();
+                    System.out.println(g.getMaxStartTime());
                     break;
                 }
                 case 10: {

@@ -7,6 +7,7 @@ import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.File;
+import java.util.Collections;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 /**
@@ -31,23 +32,59 @@ public class graph {
         minStartTime = new HashMap<Integer, Integer>();
         maxStartTime = new HashMap<Integer, Integer>();
         readFromFile();
-        for(int i:vertices)
+
+        computeDurations();
+
+    }
+
+    private void computeDurations()
+    {
+        ArrayList<Integer> toposorted=topoSort();
+        for(int i:vertices)  // current implementation for computeDuration function is not the great...
+        // it takes no advantage of the topological sort, therefore it  ends up doing lots of computations...
         {
-           minStartTime. put(i,0);  // OR 8*60 if
-            computeDuration(i);
+            minStartTime. put(i,0);
+            computeEarliest(i);
         }
-        //computeMAXDuration();
+        int max=0;
+        int x=0;
+        int costm=0;
+        for (int i :vertices)
+        {
+            if (minStartTime.get(i)>max)
+            {
+                max=minStartTime.get(i);     // probably the first element in the reversed toposort
+                x=i;
+                for(int j:inbound(i))
+                {
+                    Pair<Integer, Integer> costEdge = new Pair<Integer, Integer>(j, i);
+                    costm=costs.get(costEdge);
+                    break;
+                }
+            }
+        }
+        maxStartTime.put(x,minStartTime.get(x));
+        int costt=0;
+        Collections.reverse(toposorted);
+        for (int i: toposorted)
+        {
+            if (outbound(i).isEmpty()&&i!=x) {
+                for(int j:inbound(i))
+                {
+                    Pair<Integer, Integer> costEdge = new Pair<Integer, Integer>(j, i);
+                    costt=costs.get(costEdge);
+                    break;
+                }
+                int inter=max+costm-minStartTime.get(i)-costt;
+                maxStartTime.put(i, inter+minStartTime.get(i));
+            }
+        }
+        for(int i:toposorted)
+        {
+            if (!outbound(i).isEmpty())
+                computeLatestDuration(i);
+        }
     }
-
-
-    public void addVertex() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter the vertex");
-        int c = in.nextInt();
-        if (!vertices.contains(c))
-            vertices.add(c);
-    }
-
     public void addVertexAdmin(int c) {
         if (!vertices.contains(c))
             vertices.add(c);
@@ -87,12 +124,7 @@ public class graph {
                 quitter = in.nextInt();
             }
         }
-        for(int i:vertices)
-        {
-            minStartTime. put(i,0);
-            computeDuration(i);
-        }
-        //computeMAXDuration();
+        computeDurations();
 
 
 
@@ -268,39 +300,14 @@ public class graph {
             return neww;
         }
     }
-    public void getMinStartTimeUser()
+    public HashMap<Integer, Integer> getMinStartTime()
     {
-        Scanner in = new Scanner(System.in);
-        System.out.println("enter task number");
-        int task = in.nextInt();
-        int minutes=minStartTime.get(task);
-        //int minutes=computeDuration(task); // in order to recalculate the value
+        return minStartTime;
 
-        int hours;
-        if(minutes>60)
-        {
-            hours=minutes/60;
-            minutes=minutes%60;
-            System.out.println( hours+"h:"+minutes+"min");
-            return;
-        }
-        System.out.println(minutes+"min");
     }
-    public void getMaxStartTimeUser()
+    public HashMap<Integer, Integer> getMaxStartTime()
     {
-        Scanner in = new Scanner(System.in);
-        System.out.println("enter task number");
-        int task = in.nextInt();
-        int minutes=maxStartTime.get(task);
-        int hours;
-        if(minutes>60)
-        {
-            hours=minutes/60;
-            minutes=minutes%60;
-            System.out.println( hours+"h:"+minutes+"min");
-            return;
-        }
-        System.out.println(minutes+"min");
+        return maxStartTime;
     }
 
     public  ArrayList<Integer>  getCriticals()
@@ -313,12 +320,12 @@ public class graph {
         }
         return criticals;
     }
-    public int computeDuration(int c)
+    public int computeEarliest(int c)
     {
 
         ArrayList<Integer> durations=new ArrayList<Integer>();
 
-        innerComputeDuration(c,durations,0);
+        innerComputeEarliest(c,durations,0);
 
         int max=0;
         for(int i:durations)
@@ -333,11 +340,11 @@ public class graph {
             break;
         }
         durations.clear();
-        minStartTime.replace(c,max+minStartTime.get(c));
+        minStartTime.replace(c,max);
         return max;
 
     }
-    public void innerComputeDuration(int task, ArrayList<Integer> durations,int curent)
+    public void innerComputeEarliest(int task, ArrayList<Integer> durations,int curent)
     {
         for(int i=0;i<inbound(task).size();i++) // I used a classic for loop because we needed the value of  i
         {
@@ -355,61 +362,28 @@ public class graph {
                 int inter = costs.get(costEdge);
                 curent = curent + costs.get(costEdge);
             }
-            innerComputeDuration(j,durations,curent);
+            innerComputeEarliest(j,durations,curent);
         }
 
     }
-    public void computeMAXDuration()
+    public void computeLatestDuration(int c)
     {
-        ArrayList<Integer> MAXDurations = new ArrayList<Integer>();
-        //int max=16*60;     // this is in case we go for 16:00 as the ending hour
-        //and this value will dictate how late a task can be started
-
-        //or, for the general case , when we don't have a final time limit ;
-        //a task will have minStartTime!=maxStartTime only when the task depends on multiple tasks that have different values minStartTime
-        int max=0;
-        for(int i:vertices)
+        int min=100000;  // will hold the minimum latest time from all outbound tasks
+        for (int i:outbound(c))
         {
-            int inter=maxStartTime.get(i);
-            if(inter>max)
-                max=inter;
+            if(maxStartTime.get(i)<min)
+                min=maxStartTime.get(i);
         }
-        for(int i:vertices)
-        {
-            maxStartTime.put(i,max);
+        int cost=0;
+        for(int j:inbound(c)) {
+            Pair<Integer, Integer> costEdge = new Pair<Integer, Integer>(j, c);
+            cost = costs.get(costEdge);
+            break;
         }
-        for(int i:vertices)
-        {
-            if(outbound(i).size()==0)
-            {
-                max=minStartTime.get(i)+EdgeCostAdmin(i);
-                innerComputeMAXDuration(i,max);
-            }
-        }
+        min=min-cost;
+        maxStartTime.put(c,min);
 
 
-
-
-    }
-    public void innerComputeMAXDuration(int task,int max)
-    {
-        for(int i=0;i<inbound(task).size();i++)
-        {
-            int j=inbound(task).get(i);
-            if(i==0) // meant to be executed only once per task
-            {
-                Pair<Integer, Integer> costEdge = new Pair<Integer, Integer>(j, task);
-                int durr= costs.get(costEdge);
-                int afterTaskTime = durr + minStartTime.get(task);
-                int inter = max - afterTaskTime;
-                if((minStartTime.get(task) + inter)<maxStartTime.get(task))
-                    maxStartTime.put(task, minStartTime.get(task) + inter);
-                max = max - durr;
-            }
-            if(j!=task)
-                innerComputeMAXDuration(j, max);
-
-        }
 
     }
 
