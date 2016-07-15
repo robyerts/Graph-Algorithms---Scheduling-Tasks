@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c2248969-c7cd-47ab-bde7-7ebfb39c38f4" name="Default" comment="removing the usage of computeMaxDuration from all functions of the program, until functional.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab4-pb2/com/company/Main.class" afterPath="$PROJECT_DIR$/out/production/lab4-pb2/com/company/Main.class" />
+    <list default="true" id="c2248969-c7cd-47ab-bde7-7ebfb39c38f4" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/lab4-pb2/com/company/graph.class" afterPath="$PROJECT_DIR$/out/production/lab4-pb2/com/company/graph.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/graph.java" afterPath="$PROJECT_DIR$/src/com/company/graph.java" />
     </list>
     <ignored path="lab4-pb2.iws" />
@@ -31,7 +29,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-600">
+            <state relative-caret-position="289">
               <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -53,8 +51,8 @@
       <file leaf-file-name="graph2.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/graph2.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="136">
+              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -63,11 +61,11 @@
       <file leaf-file-name="graph.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6239">
-              <caret line="370" column="0" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+            <state relative-caret-position="4539">
+              <caret line="267" column="22" selection-start-line="267" selection-start-column="22" selection-end-line="267" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+                <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
@@ -94,9 +92,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/company/graph.txt" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
         <option value="$PROJECT_DIR$/src/com/company/graph2.txt" />
         <option value="$PROJECT_DIR$/src/com/company/graph.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
@@ -141,8 +139,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -181,7 +177,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -468,7 +466,14 @@
       <option name="project" value="LOCAL" />
       <updated>1467742997077</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="all functionalities working ; &#10;computing minimum starting time needs to be improved ;&#10;small changes and explaining needed overall">
+      <created>1468536328040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1468536328040</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -486,11 +491,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2782324" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2831424" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -499,15 +506,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34697217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2831424" sideWeight="0.4969743" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34697217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -523,7 +528,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removing the usage of computeMaxDuration from all functions of the program, until functional." />
-    <option name="LAST_COMMIT_MESSAGE" value="removing the usage of computeMaxDuration from all functions of the program, until functional." />
+    <MESSAGE value="all functionalities working ; &#10;computing minimum starting time needs to be improved ;&#10;small changes and explaining needed overall" />
+    <option name="LAST_COMMIT_MESSAGE" value="all functionalities working ; &#10;computing minimum starting time needs to be improved ;&#10;small changes and explaining needed overall" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -571,7 +577,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -608,7 +614,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -637,7 +643,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -666,7 +672,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -695,7 +701,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -724,7 +730,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -753,7 +759,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -782,7 +788,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -811,7 +817,7 @@
           <caret line="250" column="39" selection-start-line="250" selection-start-column="39" selection-end-line="250" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -840,7 +846,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -869,7 +875,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -898,7 +904,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -927,7 +933,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -948,7 +954,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -969,7 +975,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
@@ -991,7 +997,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-600">
+        <state relative-caret-position="289">
           <caret line="18" column="57" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1009,19 +1015,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/graph2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6239">
-          <caret line="370" column="0" selection-start-line="370" selection-start-column="0" selection-end-line="370" selection-end-column="0" />
+        <state relative-caret-position="4539">
+          <caret line="267" column="22" selection-start-line="267" selection-start-column="22" selection-end-line="267" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1468515102021" expanded="false" signature="7935:7944" placeholder="&lt;~&gt;" />
+            <marker date="1468598786344" expanded="false" signature="8475:8484" placeholder="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
