@@ -192,7 +192,7 @@ public class graph {
 
 
     public void readFromFile() {
-        try (BufferedReader br = new BufferedReader(new FileReader(new File("C:/Users/Robert - Tavi/IdeaProjects/lab4-pb2/src/com/company/graph2.txt")))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(new File("C:/Users/robyerts/Documents/GitHub/\\Graph-Algorithms---Scheduling-Tasks/src/com/company/graph2.txt")))) {
             String strLine = br.readLine();
             String[] array = strLine.split(" ");
             int nrVr = Integer.parseInt(array[0]);

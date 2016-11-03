@@ -9,40 +9,37 @@ public class Main {
         graph g = new graph();
 
 
-
-
-
         while (true) {
-            System.out.println("2.Add task");
-            System.out.println("3.outbound=task that depend on X");
-            System.out.println("4.inbound=the tasks X depends on");
-            System.out.println("5.duration of the task");
-            System.out.println("6.toposort(returns an empty list if there are cycles)");
-            System.out.println("7.print the tasks and their outbound and inbound dependencies");
-            System.out.println("8.the minimum time at which each task can start");
-            System.out.println("9.the maximum time at which the task can start");
-            System.out.println("10.get the lists of critical tasks");
+            System.out.println("1. Tasks and their outbound and inbound dependencies");
+            System.out.println("2. Outbound = tasks that depend on X");
+            System.out.println("3. Inbound = the tasks X depends on");
+            System.out.println("4. Duration of task");
+            System.out.println("5. Toposort (returns an empty list if there are cycles)");
+            System.out.println("6. The minimum time at which each task can start");
+            System.out.println("7. The maximum time at which each task can start");
+            System.out.println("8. The list of critical tasks");
+            System.out.println("9. Add task");
             Scanner in = new Scanner(System.in);
             int comm = in.nextInt();
             int vertex;
             if (comm==0)
                 break;
             switch (comm) {
-                case 2:
+                case 9:
                     g.addEdge();
                     break;
-                case 3:
+                case 2:
                     System.out.println("enter vertex");
                     vertex = in.nextInt();
                     System.out.println( g.outbound(vertex));
                     break;
-                case 4: {
+                case 3: {
                     System.out.println("enter vertex");
                     vertex = in.nextInt();
                     System.out.println( g.inbound(vertex));
                     break;
                 }
-                case 5: {
+                case 4: {
                     int minutes=g.EdgeCost();
                     int hours;
                     if(minutes>60)
@@ -55,23 +52,23 @@ public class Main {
                     System.out.println(minutes+"min");
                     break;
                 }
-                case 6: {
+                case 5: {
                     System.out.println(g.topoSort());
                     break;
                 }
-                case 7: {
+                case 1: {
                      g.print();
                      break;
                  }
-                case 8: {
+                case 6: {
                     System.out.println(g.getMinStartTime());
                     break;
                 }
-                case 9: {
+                case 7: {
                     System.out.println(g.getMaxStartTime());
                     break;
                 }
-                case 10: {
+                case 8: {
                     System.out.println(g.getCriticals());
                     break;
                 }
