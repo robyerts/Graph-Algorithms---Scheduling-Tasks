@@ -1,11 +1,11 @@
 # Graph-Algorithms---Scheduling-Tasks
 - written in java;
-- almost finished(some final touches may be needed, but all functionalities are working properly)
 - it reads the tasks from the file "graph.txt" in "src/com/company"/ ; "graph2.txt" contains another example ; if you need to see the second example , you will have to change the name of the file in the "readFromFile()" function
 
 File format: 
 - first line contains the number of vertices and then the vertices
 - each line after the first contains edges and vertices under the format "vertex vertex cost"
+  NOTE: in the readFromFile() function in graph class, path must be CHANGED ; it is currently set 
 
 Source files are located in package  "src/com/company" ;
 - IDE: Intellij IDEA
