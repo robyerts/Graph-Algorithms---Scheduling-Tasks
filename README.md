@@ -5,7 +5,7 @@
 File format: 
 - first line contains the number of vertices and then the vertices
 - each line after the first contains edges and vertices under the format "vertex vertex cost"
-  NOTE: in the readFromFile() function in graph class, path must be CHANGED ; it is currently set 
+  NOTE: in the readFromFile() function in graph class, path must be CHANGED ; it is currently set to my current FULL PATH
 
 Source files are located in package  "src/com/company" ;
 - IDE: Intellij IDEA
