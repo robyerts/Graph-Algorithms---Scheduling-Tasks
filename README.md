@@ -17,6 +17,8 @@ Source files are located in package  "src/com/company" ;
 - IDE: Intellij IDEA
 - lab4-pb2.png contains details about the representation I used for the tasks and their durations
 
+![alt text](https://github.com/robyerts/Graph-Algorithms---Scheduling-Tasks/blob/master/lab4-pb2.png)
+
 Pseudocode source:
 - http://www.cs.ubbcluj.ro/~rlupsa/edu/grafe/graf.pdf
 - The "Critical path method" is described from page 27 and there are 2 representations : by arc and by vertex ;
