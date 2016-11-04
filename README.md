@@ -7,7 +7,7 @@ Functionalities:
   
 ![alt text](https://github.com/robyerts/Graph-Algorithms---Scheduling-Tasks/blob/master/functionalities.png)
 
-File format: 
+Input File format: 
 - first line contains the number of vertices and then the vertices
 - each line after the first contains edges and vertices under the format "vertex vertex cost"
 
