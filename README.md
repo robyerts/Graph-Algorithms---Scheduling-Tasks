@@ -3,6 +3,8 @@
 
 Functionalities:
   MAIN MENU
+  
+  
 ![alt text](https://github.com/robyerts/Graph-Algorithms---Scheduling-Tasks/blob/master/functionalities.png)
 
 File format: 
