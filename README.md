@@ -2,7 +2,8 @@
 - it reads the tasks from the file "graph.txt" in "src/com/company"/ ; "graph2.txt" contains another example ; if you need to see the second example , you will have to change the name of the file in the "readFromFile()" function
 
 Functionalities:
-- functionalities.png image contains the MAIN MENU of the program
+  MAIN MENU
+![alt text](https://github.com/robyerts/Graph-Algorithms---Scheduling-Tasks/blob/master/functionalities.png)
 
 File format: 
 - first line contains the number of vertices and then the vertices
