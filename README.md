@@ -1,5 +1,5 @@
 - written in java;
-- it reads the tasks from the file "graph.txt" in "src/com/company"/ ; "graph2.txt" contains another example ; if you need to see the second example , you will have to change the name of the file in the "readFromFile()" function
+- it reads the tasks from the file "graph.txt" in "src/com/company"/ ; "graph2.txt" contains another example (file path is set to the current working directory under Windows; please set it accordingly to your operating system in "readFromFile()" function)
 
 Functionalities:
   MAIN MENU
